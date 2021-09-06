@@ -124,7 +124,7 @@ public class Parser {
         String description = "";
         for (int i = 1; i < inputArr.length; i++) {
             if (inputArr[i].charAt(0) != '(') {
-                description += (" " + inputArr[i]);
+                description += inputArr[i];
             } else {
                 String duration = inputArr[i];
                 duration = duration.replaceAll("[()]", "");
